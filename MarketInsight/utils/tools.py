@@ -275,6 +275,32 @@ def get_institutional_holders(ticker: str):
         return "Error: Failed to retrieve institutional holders. Please try again later."
 
 # --------------------------------------------------------------------------------
+# Tool 11: Retrieve Major Share Holders
+# --------------------------------------------------------------------------------
+@tool('get_major_shareholders', description="A function that returns the major share holder data of a given ticker")
+def get_major_shareholders(ticker: str):
+    logger.info(f"Retrieving Major Share Holders of {ticker}")
+
+    if not ticker or not isinstance(ticker, str):
+        return "Error: Invalid ticker provided. Please provide a valid ticker symbol."
+
+    try:
+        start_time = time.time()
+        stock = yf.Ticker(ticker)
+        holders = stock.major_holders.to_dict()
+
+        if holders is None:
+            return "No major share holders available for {ticker}"
+
+        end_time = time.time()
+        logger.info(f"Retrieved Major Share Holders of {ticker} in {end_time - start_time:.3f} seconds")
+        return holders
+
+    except Exception as e:
+        logger.error(f"Failed to retrieve major share holders of {ticker}: {str(e)}")
+        return "Error: Failed to retrieve major share holders. Please try again later."
+
+# --------------------------------------------------------------------------------
 # Tool 12: Retrieve Mutual Fund Holders
 # --------------------------------------------------------------------------------
 @tool('get_mutual_fund_holders', description="A function that returns the mutual fund ownership data of a given ticker")
