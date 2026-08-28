@@ -85,6 +85,3 @@ async def chat(request: RequestObject):
             'connection': 'keep-alive'
         })
 
-if __name__ == '__main__':
-    logger.info("App Initiated Successfully")
-    uvicorn.run(app, host='0.0.0.0', port=8000)
