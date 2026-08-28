@@ -8,4 +8,7 @@
     "dev:frontend": "cd frontend && npm run dev",
     "install:all": "cd frontend && npm install"
   },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
 }
