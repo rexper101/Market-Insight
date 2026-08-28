@@ -62,3 +62,15 @@ MarketInsight/
 └── main.py         # FastAPI server entry point
 ```
 
+## API Capabilities
+
+The platform provides 16 specialized tools for comprehensive stock analysis:
+- Stock price tracking
+- Historical data analysis
+- Financial statements (Balance Sheet, Income Statement, Cash Flow)
+- Company information and ratios
+- Dividend and split history
+- Ownership and holder data
+- Insider transactions
+- Analyst recommendations
+- Company ticker lookup
