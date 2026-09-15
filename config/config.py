@@ -5,3 +5,7 @@ class PromptObject(BaseModel):
     id: str
     role: str
 
+class RequestObject(BaseModel):
+    prompt: PromptObject
+    threadId: str
+    responseId: str
