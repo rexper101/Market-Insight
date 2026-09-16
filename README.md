@@ -51,14 +51,3 @@ Market Insight leverages advanced AI agents to deliver real-time stock market in
    ```
 7. Access the API at `http://localhost:8000` and frontend at `http://localhost:5173`
 
-## Project Structure
-
-```
-MarketInsight/
-├── components/     # AI agent configuration
-├── utils/          # Tools and utilities
-├── config/         # Configuration files
-├── frontend/       # React frontend application
-└── main.py         # FastAPI server entry point
-```
-
