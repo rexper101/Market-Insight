@@ -428,6 +428,3 @@ def get_ticker(company_name: str):
         else:
             return "Error: Failed to retrieve ticker. Please try again later."
             
-    except Exception as e:
-        logger.error(f"Failed to retrieve ticker of {company_name}: {str(e)}")
-        return "Error: Failed to retrieve ticker. Please try again later."
