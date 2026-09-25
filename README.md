@@ -23,18 +23,18 @@ Market Insight leverages advanced AI agents to deliver real-time stock market in
 ## Getting Started
 
 ### Prerequisites
-- Python 3.x
-- Node.js (for frontend)
-- OpenAI API key
+- Python 3.11+
+- Node.js 18+
+- An OpenAI-compatible API key
 
 ### Installation
 
-1. Clone the repository
-2. Install Python dependencies:
+1. Clone the repository.
+2. Copy `.env.example` to `.env` and fill in the required values.
+3. Install Python dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Set up environment variables in `.env` file
 4. Install frontend dependencies:
    ```bash
    cd frontend
@@ -49,7 +49,9 @@ Market Insight leverages advanced AI agents to deliver real-time stock market in
    cd frontend
    npm run dev
    ```
-7. Access the API at `http://localhost:8000` and frontend at `http://localhost:5173`
+7. Access the API at `http://localhost:8000` and the frontend at `http://localhost:5173`.
+
+> The backend will start in a degraded mode without an API key, but the chat endpoint will return a clear 503 error until the credentials are configured.
 
 ## Project Structure
 
