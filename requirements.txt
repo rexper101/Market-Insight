@@ -2,9 +2,3 @@ fastapi
 pydantic
 uvicorn
 python-dotenv
-langchain-openai
-langgraph
-yfinance
-langchain
-langchain-core
-langfuse
